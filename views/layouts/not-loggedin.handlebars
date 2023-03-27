@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Testing Environment</title>
+    <link rel='stylesheet' href='/styles/style.css' />
+    {{!-- <link rel='stylesheet' href='/styles/header/header.css' /> --}}
+
+    {{! <link rel="stylesheet" href="/styles/sierra/index.css"> }}
+  </head>
+
+  <body>
+    {{> header/not-loggedin}}
+    <main class="container--primary">
+      {{{body}}}
+    </main>
+    {{> footer/index}}
+  </body>
+</html>

@@ -1,0 +1,66 @@
+.registration-page {
+  min-height: 61.1rem;
+  background-image: url('/images/register/registration-page-3.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  align-items: center;
+  padding: 0;
+
+  .registration-form {
+    margin-top: -10rem;
+    max-width: 21.5rem;
+    padding-right: 4rem;
+  }
+
+  .add-location-form {
+    max-width: 29.5rem;
+  }
+
+  .document-upload-form {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+    .input-groups {
+      margin-top: 2.5rem;
+    }
+
+    .input-group {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+      align-items: center;
+
+      .description {
+        padding-top: 1.2rem;
+      }
+    }
+
+    .buttons {
+      gap: 2rem;
+
+      .skip-link {
+        color: $gray-500;
+      }
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      cursor: pointer;
+      gap: 0.5rem;
+
+      .plus-icon-wrapper {
+        width: 6.25rem;
+        height: 3.75rem;
+        svg {
+          display: block;
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+}

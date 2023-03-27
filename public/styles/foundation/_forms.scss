@@ -1,0 +1,124 @@
+input {
+  font-size: 1em;
+}
+
+input[type='text'] {
+  padding: 0.1rem 0.2rem;
+}
+
+.form--primary {
+  width: 100%;
+  font-size: 0.6875rem;
+  padding: 2.5rem;
+  padding-top: 2rem;
+  padding-right: 3.5rem;
+
+  h1 {
+    font-size: 1.375rem;
+    margin: 0.25em 0;
+  }
+
+  > span {
+    font-size: 0.8rem;
+  }
+
+  a {
+    font-weight: 900;
+  }
+
+  label {
+    color: $blue-800;
+    font-weight: 900;
+    font-size: 0.6875rem;
+    letter-spacing: normal;
+    font-size: larger;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+  }
+
+  input[type='text'] {
+    padding: 0.5rem;
+  }
+
+  input[type='file'] {
+    display: none;
+  }
+
+  input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 0.3rem;
+    border: 2px solid $gray-300;
+  }
+
+  input::placeholder {
+    color: $placeholder;
+    font-size: 0.75rem;
+  }
+
+  .input-group {
+    margin-top: 1rem;
+  }
+
+  .button--primary {
+    padding: 0.4688rem 2.3125rem;
+  }
+
+  .button--blue {
+    font-size: 0.625rem;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    .login-link {
+      color: $blue;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .button {
+      justify-self: right;
+      width: fit-content;
+    }
+  }
+}
+
+.add-location-form,
+.document-upload-form {
+  max-width: 30rem;
+}
+
+.checkbox-round {
+  width: 0.7em;
+  height: 0.7em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1.5px solid #1e1d1d;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: $gray-300;
+}
+
+.input-gray {
+  text-align: center;
+  border-radius: 20px !important;
+  padding: 0.6em 1.9em !important;
+  border: 0;
+  background-color: #ebebebeb;
+  font-size: 0.7rem;
+  font-family: Anton;
+  letter-spacing: 0.1rem;
+  color: $gray-400;
+  opacity: 0.9;
+}

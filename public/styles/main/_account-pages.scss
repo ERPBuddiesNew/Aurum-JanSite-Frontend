@@ -1,0 +1,45 @@
+.account-pages {
+  font-size: 0.56rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .button {
+    font-weight: 900;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    text-transform: none;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+  }
+
+  h4 {
+    text-transform: none;
+    font-family: 'Source Sans Pro';
+    font-weight: 900;
+    margin: 0.2rem 0;
+    font-size: 0.75rem;
+  }
+
+  .border-top {
+    border-top: 1px solid $gray-300;
+  }
+
+  .main {
+    background-color: $gray-100;
+    padding: 1rem 4rem;
+    padding-bottom: 3rem;
+    max-width: 50rem;
+    width: 100%;
+    align-self: center;
+    margin: 2rem;
+  }
+}

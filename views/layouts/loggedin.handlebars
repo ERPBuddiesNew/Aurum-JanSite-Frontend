@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>WCD Medical</title>
+    <link rel='stylesheet' href='/styles/style.css' />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{!-- <link rel='stylesheet' href='/styles/header/header.css' /> --}}
+
+    {{! <link rel="stylesheet" href="/styles/sierra/index.css"> }}
+  </head>
+
+  <body>
+    {{> header/loggedin}}
+    <main class="container--primary">
+      {{{body}}}
+    </main>
+    {{> footer/index}}
+  </body>
+</html>

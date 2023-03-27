@@ -1,0 +1,200 @@
+.payment-methods {
+  .card-image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: transparent;
+    align-items: center;
+
+    img {
+      width: 100%;
+      grid-area: 1 / 1 / 5 / 5;
+    }
+  }
+
+  .badge {
+    width: max-content;
+    justify-self: right;
+    background-color: $green;
+    text-transform: capitalize;
+    color: white;
+    border-radius: 0.15rem;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.8em;
+    grid-area: 2 / 3 / 3 / 5;
+  }
+
+  .badge.expired {
+    background-color: rgb(230, 22, 16);
+  }
+
+  .cards {
+    a {
+      color: $green;
+      transition: all 0.3s;
+    }
+
+    .tabbed {
+      overflow-x: hidden; /* so we could easily hide the radio inputs */
+      padding-bottom: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      @media only screen and (max-width: 850px) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    .tabbed [type='radio'] {
+      /* hiding the inputs */
+      display: none;
+    }
+
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      list-style: none;
+      padding: 0;
+      @media only screen and (max-width: 850px) {
+        .tab {
+          width: 70%;
+        }
+      }
+
+      .add-payment-method {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: baseline;
+        align-items: center;
+        gap: 1rem;
+        color: $gray;
+        padding: 2rem 0 0 1rem;
+      }
+    }
+
+    .tab > label {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 1.4rem;
+      align-items: center;
+      margin-bottom: -1px;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      background: #eee;
+      color: black;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: left;
+
+      .card-summary {
+        b,
+        span {
+          display: block;
+        }
+
+        b {
+          font-size: 0.65rem;
+        }
+      }
+    }
+
+    .tab:hover label {
+      border-top-color: #333;
+      color: #333;
+    }
+
+    .tab-content {
+      display: none;
+      color: $black;
+      font-size: 0.625rem;
+      text-align: left;
+      margin-left: 2rem;
+      border-radius: 5px;
+      .badge {
+        padding: 0.3rem 1.7rem 0.3rem 1rem;
+      }
+      height: fit-content;
+      padding: 1rem;
+      background-color: $gray-260;
+
+      .customer-info {
+        display: grid;
+        color: white;
+        grid-area: 3 / 1 / 5 / 5;
+        padding: 0.5em 1em;
+      }
+    }
+
+    /* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+    .tabbed
+      [type='radio']:nth-of-type(1):checked
+      ~ .tabs
+      .tab:nth-of-type(1)
+      label,
+    .tabbed
+      [type='radio']:nth-of-type(2):checked
+      ~ .tabs
+      .tab:nth-of-type(2)
+      label,
+    .tabbed
+      [type='radio']:nth-of-type(3):checked
+      ~ .tabs
+      .tab:nth-of-type(3)
+      label,
+    .tabbed
+      [type='radio']:nth-of-type(4):checked
+      ~ .tabs
+      .tab:nth-of-type(4)
+      label,
+    .tabbed
+      [type='radio']:nth-of-type(5):checked
+      ~ .tabs
+      .tab:nth-of-type(5)
+      label {
+      border-bottom-color: #fff;
+      box-shadow: 25px 0px 0px -20px $red-600 inset;
+
+      //border-left: 0.25rem solid black;
+      background: #fff;
+      color: #222;
+    }
+
+    .tabbed [type='radio']:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+    .tabbed [type='radio']:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+    .tabbed [type='radio']:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+    .tabbed
+      [type='radio']:nth-of-type(4):checked
+      ~ .tab-content:nth-of-type(4) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+
+      @media only screen and (max-width: 871px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .approval-section {
+    color: $blue-800;
+  }
+
+  .approval {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .approval-info {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .blue-card {
+    height: 3.125rem;
+    width: 9rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.625rem;
+  }
+}

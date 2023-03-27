@@ -1,0 +1,50 @@
+.saved-lists {
+  font-size: 1rem;
+
+  .buttons {
+    display: grid;
+    gap: 0.5rem;
+    width: 7.9375rem;
+  }
+
+  table {
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 0.57rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 2rem;
+    background-color: $white;
+    th,
+    td {
+      border: 1px solid #c0c0c0;
+      padding: 1rem;
+    }
+
+    thead {
+      background-color: $gray-210;
+    }
+
+    a {
+      color: $blue-200;
+      text-decoration: underline;
+      font-weight: 400;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: $blue-800;
+    font-weight: 900;
+  }
+
+  .container--light-gray {
+    padding: 1rem 1.5rem;
+    padding-bottom: 2rem;
+    font-size: 0.875rem;
+  }
+}

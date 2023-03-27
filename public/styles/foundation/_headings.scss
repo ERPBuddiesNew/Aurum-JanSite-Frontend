@@ -1,0 +1,68 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  line-height: 100%;
+  font-family: 'Anton';
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 150;
+}
+h3 {
+  font-size: 1.7rem;
+  font-weight: 150;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: 100;  
+}
+
+.heading {
+  padding: 5px 10px;
+
+  &--primary {
+    text-transform: uppercase;
+  }
+
+  &--secondary {
+    color: $primary-color;
+    background-color: transparent;
+  }
+
+  &--success {
+    background-color: $dark-green;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: darkgreen;
+    }
+  }
+
+  &--warning {
+    background-color: orange;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: darkorange;
+    }
+  }
+
+  &--danger {
+    background-color: red;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: darkred;
+    }
+  }
+}

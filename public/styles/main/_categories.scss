@@ -1,0 +1,108 @@
+.categories {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 0.7rem;
+    font-family: inherit;
+    text-transform: none;
+    font-weight: 900;
+    margin: 1.5rem 0;
+  }
+  .bg-image {
+    text-align: center;
+    background-image: url('https://i.ibb.co/q15hQSs/Categories-Pages-5-02.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 45.1%;
+  }
+  .container--primary {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-section {
+    height: 0;
+    padding: 0;
+    background-image: url('/images/categories/categories-hero.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .category-search-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    .side-nav {
+      text-align: left;
+      font-size: 0.7rem;
+      padding: 1em;
+      background-color: white;
+      color: black;
+
+      ul {
+        padding: 0;
+        li {
+          margin-bottom: 1em;
+        }
+      }
+      .input-group {
+        border-bottom: 1px solid $primary-color;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .subcategory {
+      max-width: 50rem;
+      .category-grid {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 10rem);
+        &__item {
+          display: flex;
+          justify-content: center;
+        }
+        .category {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 4rem;
+          width: 7rem;
+          height: 10rem;
+          img {
+            width: 100%;
+          }
+          span {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  .top-browsed-items {
+    margin-bottom: 1rem;
+    .product-card {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .shop-by-top-brands {
+    .logo-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem 3rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  }
+}

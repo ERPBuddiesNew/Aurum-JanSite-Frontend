@@ -1,0 +1,37 @@
+.account-settings {
+  font-size: 0.6rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    gap: 2rem;
+    max-width: 45rem;
+    border-bottom: 1px solid $gray-300;
+
+    ul {
+      border: 1px solid $gray-300;
+      padding: 0.5rem;
+      align-self: baseline;
+      text-align: left;
+      :first-child {
+        font-weight: 900;
+        margin-bottom: 0.8rem;
+      }
+      min-height: 10rem;
+      min-width: 10rem;
+
+      li {
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+}

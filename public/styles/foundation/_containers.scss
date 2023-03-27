@@ -1,0 +1,61 @@
+.container {
+  padding: 0.3125rem 0.625rem;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &--primary {
+    color: $primary-color;
+    background-color: $white;
+  }
+
+  &--secondary {
+    background-color: $primary-color;
+    color: $white;
+  }
+  &--gray {
+    background-color: $gray;
+    color: $white;
+  }
+  &--light-gray {
+    background-color: $gray-300;
+    color: $black;
+  }
+
+  &--success {
+    background-color: $dark-green;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: darkgreen;
+    }
+  }
+
+  &--blue {
+    background-color: $blue;
+    color: white;
+  }
+
+  &--warning {
+    background-color: orange;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: darkorange;
+    }
+  }
+
+  &--danger {
+    background-color: red;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-color: darkred;
+    }
+  }
+}

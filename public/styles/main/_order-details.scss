@@ -1,0 +1,125 @@
+.order-details {
+  font-size: 1rem;
+
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: $blue-800;
+    font-weight: 900;
+
+    ul {
+      margin: 0;
+      text-align: left;
+    }
+
+    a {
+      color: $blue-100;
+      font-size: 0.5625rem;
+    }
+  }
+
+  .align-top {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  hr {
+    margin: 1rem auto;
+    width: 80%;
+    border-color: $black;
+  }
+
+  .container--light-gray {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    background-color: $gray-260;
+
+    > li {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      &:first-child {
+        padding-bottom: 1rem;
+        font-weight: 900;
+      }
+
+      .order-summary {
+        font-size: 0.75rem;
+        li {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      .grand-total {
+        font-weight: 900;
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .items {
+    margin: 1rem 0;
+
+    .item {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 1fr 3fr;
+      margin: 1rem 0;
+      .item-content {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.6rem;
+        .subsidiary {
+          text-transform: none;
+          font-size: 0.75rem;
+          margin: 0.1rem 0rem;
+          font-weight: 600;
+        }
+        .title {
+          font-size: 1rem;
+          margin: 0.4rem 0rem;
+          font-family: inherit;
+          text-transform: uppercase;
+        }
+
+        .description {
+          font-weight: 600;
+        }
+
+        .price {
+          font-size: 1rem;
+          margin: 0.3rem 0;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .past-orders {
+    ul {
+      margin: 0;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 7fr 1.9fr;
+      //align-items: center;
+      .button {
+        text-transform: none;
+        font-size: 0.5rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.3125rem;
+        margin-top: 1.5em;
+        color: $gray-260;
+        letter-spacing: 0.05rem;
+      }
+    }
+  }
+}

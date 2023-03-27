@@ -1,0 +1,136 @@
+header.container {
+  justify-content: flex-start;
+}
+
+/** HEADER */
+header {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: $primary-color;
+  padding: 0;
+  margin: 0;
+
+  .button {
+    font-size: 0.55rem;
+  }
+}
+
+.logo {
+  img {
+    width: 10rem;
+  }
+}
+
+/** NAVIGATION BAR */
+nav {
+  display: grid;
+  font-size: 0.7rem;
+  overflow: hidden;
+  background-color: transparent;
+  width: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-right: 0.7rem;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.top-nav {
+  grid-template-columns: 7fr 5fr;
+  min-height: 5rem;
+  .search-area {
+    display: flex;
+    border: 1px solid $gray;
+    padding: 0.2rem 2rem;
+    box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.5);
+  }
+
+  input[type='text'] {
+    width: 100%;
+    max-width: 10rem;
+    min-width: 8rem;
+    text-align: center;
+    border: 0px;
+    outline: 0px;
+  }
+
+  .top-nav__right {
+    gap: 0.2rem;
+    grid-template-columns: 7fr repeat(2, 8rem);
+    align-items: baseline;
+    padding-right: 1rem;
+    .button {
+      letter-spacing: 0.05rem;
+      margin-top: 1rem;
+      &--secondary {
+        padding: 0.5rem;
+      }
+    }
+
+    .need-help-wrapper {
+      border-right: 1px solid $primary-color;
+      padding-right: 1rem;
+    }
+    li {
+      padding: 0;
+      display: flex;
+      justify-content: right;
+    }
+  }
+
+  .top-nav__left {
+    grid-template-columns: 3fr 5fr;
+  }
+}
+
+.main-nav {
+  grid-template-columns: 11fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+  .content {
+    text-align: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      border-right: 2.3px solid $primary-color;
+      width: 7rem;
+      padding: 0 0.2rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    li:last-child {
+      border: 0;
+    }
+  }
+
+  &__cart {
+    padding-right: 0;
+    li {
+      display: flex;
+      justify-content: right;
+    }
+  }
+}

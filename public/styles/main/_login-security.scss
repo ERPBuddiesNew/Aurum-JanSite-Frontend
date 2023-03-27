@@ -1,0 +1,32 @@
+.login-security {
+  font-size: 0.875rem;
+  .main {
+    background-color: white;
+    max-width: 40rem;
+    width: 100vw;
+
+    .info {
+      display: grid;
+    }
+
+    .account-info {
+      border: 1px solid $gray-300;
+      border-radius: 0.3125rem;
+      text-align: left;
+      > li {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid $gray-300;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .button {
+      padding: 0.75rem 1.25rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+}

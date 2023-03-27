@@ -1,0 +1,45 @@
+$bg-size: 851px;
+$bg-url: 'https://i.ibb.co/gjgGnKX/Login-Page-1.png';
+
+.login-page {
+  background-image: url($bg-url);
+  min-height: $bg-size;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  align-items: flex-start;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  .login-form {
+    border: 1px solid $gray;
+    margin-top: -5rem;
+    max-width: 19.5rem;
+
+    input::placeholder {
+      color: $primary-color;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      a {
+        color: #aaaaaa;
+        margin-top: 1em;
+      }
+
+      .button {
+        color: white;
+        padding-right: 1.8rem;
+        padding-left: 1.8rem;
+      }
+    }
+  }
+}
