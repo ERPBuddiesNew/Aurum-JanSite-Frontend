@@ -8,7 +8,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build":"yarn",
     "watch": "nodemon server.js style.css"
   },
   "author": "Eric Ferraiuolo <eferraiuolo@gmail.com>",
