@@ -3652,3 +3652,31 @@ main .about .container--secondary {
   padding: 1rem 0;
   max-width: 40rem;
 }
+
+/** MY Addresses**/
+.my-addresses .locations h3 {
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: #606060;
+  display: inline-flex;
+  width: 100%;
+}
+
+.account-content-order  {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: #fff;
+  text-align: left;
+font-weight:600;
+
+}
+
+.account-content-track  {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  margin-bottom: 1.6rem;
+  color: #fff;
+  text-align: left;
+  
+}
